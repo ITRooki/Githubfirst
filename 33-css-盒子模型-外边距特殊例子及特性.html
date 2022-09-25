@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+             .a,.b{width: 100px;height: 100px;}
+             .a{background-color: aqua;margin-bottom: 80px;}
+             .b{background-color: blue;margin-top: 10px;}
+             /* 兄弟关系中,垂直方向，外边距取最大值 */
+             /* 兄弟关系中,水平方向，外边距则会相加合并 */
+             .c{width: 200px;height: 200px;background-color: chartreuse;border: 2px solid darkorange;}
+             /* 父盒子,不想看到框可以设置为transparent */
+             .d{width: 100px;height: 100px;background-color: darkmagenta;margin: 51px 51px;}
+             /* 子盒子 */
+             /* 使属性仅在子盒子中生效的方法:
+                1.子margin-top=>父padding-top(会改变高度,要改变父盒子高度)
+                2.给父盒子加边框
+                3.让父子盒子中的一个浮动
+                4.overflow:hidden bfc,构建成bfc后不对外界有影响
+             */
+    </style>
+</head>
+<body>
+    <div class="a"></div>
+    <div class="b"></div>
+    <div class="c">
+        <div class="d">
+            没牛子
+        </div>
+    </div>
+    
+</body>
+</html>

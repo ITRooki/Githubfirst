@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 外边距margin即为网页上不同框框之间的间距 */
+        /* 背景色无法蔓延至外边距，只能到border边框 */
+        /* 外边距支持负值，会重合，超过大小会消失 */
+        div{width: 100px;height: 100px;float: left;}
+        .a{background: yellow;border:10px solid brown;}
+        .b{background: blue;border:10px solid green;margin-left: 25px;margin-right:25px ;}
+        .c{background: aqua; border: 10px solid deeppink;}
+        /* margin:0 auto 为横向居中最快方法 */
+        /* 在设置浮动后居中无效 */
+    </style>
+</head>
+<body>
+    <div class="a"></div>
+    <div class="b"></div>
+    <div class="c">没牛子</div>
+</body>
+</html>
